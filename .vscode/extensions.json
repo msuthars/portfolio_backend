@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "shevaua.phpcs",
+        "open-southeners.laravel-pint",
+        "laravel.vscode-laravel",
+        "bmewburn.vscode-intelephense-client",
+        "editorconfig.editorconfig"
+    ]
+}

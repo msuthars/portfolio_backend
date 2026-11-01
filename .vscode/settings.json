@@ -1,0 +1,35 @@
+{
+    // phpcs (shevaua.phpcs): use this project's phpcs and phpcs.xml,
+    // not the global Drupal standard from the user settings.
+    "phpcs.enable": true,
+    "phpcs.executablePath": "vendor/bin/phpcs",
+    "phpcs.composerJsonPath": "composer.json",
+    "phpcs.standard": null,
+    "phpcs.autoConfigSearch": true,
+    "phpcs.showSources": true,
+
+    // Format PHP with Laravel Pint on save
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint",
+        "editor.formatOnSave": true
+    },
+    "laravel-pint.enable": true,
+    "laravel-pint.executablePath": "vendor/bin/pint",
+
+    // Blade templates are not PHP files: don't run Pint or phpcs on them
+    "files.associations": {
+        "*.blade.php": "blade"
+    },
+    "[blade]": {
+        "editor.formatOnSave": false
+    },
+
+    "editor.rulers": [120],
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "search.exclude": {
+        "vendor": true,
+        "storage": true,
+        "bootstrap/cache": true
+    }
+}
