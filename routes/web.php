@@ -6,9 +6,7 @@ use App\Http\Controllers\Admin\QuestController;
 use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/admin');
 
 Route::prefix('admin')->name('admin.')->group(function () {
 

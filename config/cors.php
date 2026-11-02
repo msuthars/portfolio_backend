@@ -15,11 +15,14 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*'],
 
-    'allowed_methods' => ['*'],
+    'allowed_methods' => ['GET'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+      'http://localhost:5173',          // React dev server (npm run dev)
+      'https://msuthars.github.io',     // live portfolio
+    ],
 
     'allowed_origins_patterns' => [],
 
